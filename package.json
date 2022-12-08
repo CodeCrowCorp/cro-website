@@ -32,7 +32,7 @@
         "@babel/runtime": "^7.20.6",
         "@ctrl/ngx-emoji-mart": "^7.1.0",
         "@ngx-pwa/local-storage": "^13.0.5",
-        "@schematics/angular": "^15.0.2",
+        "@schematics/angular": "^15.0.3",
         "@solana/spl-token": "^0.3.6",
         "@solana/web3.js": "^1.69.0",
         "@videogular/ngx-videogular": "^6.0.0",
