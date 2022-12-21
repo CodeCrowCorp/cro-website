@@ -63,7 +63,9 @@ export class ChatService {
         const formData: FormData = new FormData()
         formData.append('file', fileToUpload, fileToUpload.name)
         formData.append('channelId', channelId)
-        return await lastValueFrom(this.http.put(`${environment.apiUrl}/attachments/file`, formData))
+        formData.append('name', fileToUpload.name)
+        formData.append('type', fileToUpload.type)
+        return await lastValueFrom(this.http.post(`${environment.apiUrl}/attachments/file`, formData))
     }
 
     async deleteFile(key: string): Promise<any> {
