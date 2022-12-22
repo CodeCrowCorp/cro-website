@@ -44,7 +44,7 @@
         "lodash": "^4.17.21",
         "lottie-web": "^5.10.0",
         "moment": "^2.29.4",
-        "ng2-dragula": "^2.1.1",
+        "ng2-dragula": "^3.2.0",
         "ngx-lottie": "^10.0.0",
         "rxjs": "7.8.0",
         "tslib": "^2.4.1",
