@@ -245,7 +245,7 @@ export class InputComponent implements OnInit, OnChanges, AfterViewChecked {
                     userId: this.user._id,
                     avatar: this.user.avatar,
                     text: data.name,
-                    file: data.location,
+                    file: data.key,
                     type: data.type
                 }
             } else {
