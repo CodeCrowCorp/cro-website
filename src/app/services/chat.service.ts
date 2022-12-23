@@ -62,7 +62,7 @@ export class ChatService {
     async postFile(channelId: string, fileToUpload: File): Promise<any> {
         return await lastValueFrom(this.http
             .post(`${environment.apiUrl}/attachments/file?channelId=${channelId}&name=${fileToUpload.name}&type=${fileToUpload.type}`,
-            fileToUpload, {headers:{'content-type':'multipart/form-data'}}))
+            fileToUpload))
     }
 
     async deleteFile(key: string): Promise<any> {
