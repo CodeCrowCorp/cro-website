@@ -60,9 +60,23 @@ export class ChatService {
     }
 
     async postFile(channelId: string, fileToUpload: File): Promise<any> {
-        return await lastValueFrom(this.http
+        /* return await lastValueFrom(this.http
             .post(`${environment.apiUrl}/attachments/file?channelId=${channelId}&name=${fileToUpload.name}&type=${fileToUpload.type}`,
-            fileToUpload))
+            fileToUpload)) */
+           const response = await fetch(`${environment.apiUrl}/attachments/file?channelId=${channelId}&name=${fileToUpload.name}&type=${fileToUpload.type}`, {
+                method: "POST",
+                body: fileToUpload,
+                // 👇 Set headers manually for single file upload
+                // content-type & content-length are automatically set by browser
+                headers: {
+                  "content-type": fileToUpload.type,
+                  "content-length": `${fileToUpload.size}`, // 👈 Headers need to be a string
+                  "content-disposition": `attachment; filename = ${fileToUpload.name}`,
+                  Authorization: localStorage.getItem('jwt'),
+                  userId: localStorage.getItem('userId')
+                },
+              })
+        return await response.json()
     }
 
     async deleteFile(key: string): Promise<any> {

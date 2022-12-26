@@ -241,6 +241,8 @@ export class InputComponent implements OnInit, OnChanges, AfterViewChecked {
         if ((this.chatMessage && /\S/.test(this.chatMessage)) || this.fileToUpload) {
             if (this.fileToUpload) {
                 const data = await this.chatService.postFile(this.channelId, this.fileToUpload)
+                console.log("response data")
+                console.log(data)
                 attributes = {
                     userId: this.user._id,
                     avatar: this.user.avatar,
