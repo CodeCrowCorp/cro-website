@@ -38,7 +38,7 @@
         "animate.css": "^4.1.1",
         "bn-ng-idle": "^2.0.4",
         "bootstrap": "^5.2.3",
-        "core-js": "^3.26.0",
+        "core-js": "^3.27.1",
         "events": "^3.3.0",
         "localstorage-polyfill": "^1.0.1",
         "lodash": "^4.17.21",
