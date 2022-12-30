@@ -33,7 +33,7 @@
         "@ngx-pwa/local-storage": "^15.0.0",
         "@schematics/angular": "^15.0.4",
         "@solana/spl-token": "^0.3.6",
-        "@solana/web3.js": "^1.70.3",
+        "@solana/web3.js": "^1.73.0",
         "@videogular/ngx-videogular": "^6.0.0",
         "animate.css": "^4.1.1",
         "bn-ng-idle": "^2.0.4",
