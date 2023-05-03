@@ -3,8 +3,8 @@
 	import IconSocialDiscordInverse from '$lib/assets/icons/contact/IconSocialDiscordInverse.svg'
 </script>
 
-<div class="hero min-h-screen bg-base-200">
-	<div class="m-10 lg:w-2/5 bg-primary p-16 rounded-md">
+<div class="hero min-h-screen">
+	<div class="m-10 lg:w-2/5 bg-base-100 p-16 rounded-md">
 		<h1 class="text-4xl pb-4 text-white font-bold">Get in touch</h1>
 		<p class="text-xl text-white pb-8 leading-relaxed font-normal pr-4">
 			Got a question about us? Are you interested in partnering with us? Have some suggestions or

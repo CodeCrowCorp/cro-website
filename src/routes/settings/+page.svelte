@@ -8,7 +8,7 @@
 
 	onMount(() => {
 		if (browser) {
-			currentTheme = localStorage.getItem('theme') || 'dark'
+			currentTheme = localStorage.getItem('theme') || 'synthwave'
 		}
 		themeChange(false)
 	})

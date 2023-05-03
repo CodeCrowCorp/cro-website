@@ -1,8 +1,8 @@
-<script>
+<script lang="ts">
 	import IconCareers from '$lib/assets/icons/IconCareers.svelte'
 </script>
 
-<div class="hero min-h-screen bg-base-200">
+<div class="hero min-h-screen">
 	<div class="hero-content text-center">
 		<div class="max-w-md">
 			<div class="flex justify-center">
