@@ -9,7 +9,7 @@
 			href="https://mage.stream"
 			class="inline-flex justify-between items-center py-1 px-1 pr-4 mb-7 text-sm text-pink-700 bg-pink-100 rounded-full dark:bg-pink-900 dark:text-pink-300 hover:bg-pink-200 dark:hover:bg-pink-800">
 			<span class="text-xs bg-pink-600 rounded-full text-white px-4 py-1.5 mr-3">New</span>
-			<span class="text-sm font-medium">Mage is WIP! Check it out here</span>
+			<span class="text-sm font-medium">Mage was launched! Check it out here</span>
 			<IconRightChenvronSmall />
 		</a>
 		<h1 class="mb-4 text-3xl font-extrabold text-gray-900 dark:text-white md:text-5xl lg:text-6xl">
