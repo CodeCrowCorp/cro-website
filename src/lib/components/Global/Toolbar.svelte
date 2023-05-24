@@ -24,7 +24,7 @@
 						<li>
 							<a class="text-white focus:bg-pink-700" href="https://infini.build">infinibuild</a>
 						</li>
-						<li><a class="text-white focus:bg-pink-700" href="https://mvp.online">MVP</a></li>
+						<li><a class="text-white focus:bg-pink-700" href="">MVP</a></li>
 					</ul>
 				</li>
 				<li><a class="text-white focus:bg-pink-700" href="/careers">Careers</a></li>
