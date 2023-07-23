@@ -16,10 +16,6 @@
 					<a class="justify-between focus:bg-pink-700"> Products </a>
 					<ul class="p-2">
 						<li><a class="focus:bg-pink-700" href="https://mage.stream">Mage</a></li>
-						<li>
-							<a class="focus:bg-pink-700" href="https://infini.build">infinibuild</a>
-						</li>
-						<li><a class="focus:bg-pink-700" href="">MVP</a></li>
 					</ul>
 				</li>
 				<li><a class="focus:bg-pink-700" href="/careers">Careers</a></li>
@@ -39,10 +35,6 @@
 					<summary class="focus:bg-pink-700"> Products </summary>
 					<ul class="p-2 z-10">
 						<li><a class="focus:bg-pink-700" href="https://mage.stream">Mage</a></li>
-						<li>
-							<a class="focus:bg-pink-700" href="https://infini.build">infinibuild</a>
-						</li>
-						<li><a class="focus:bg-pink-700" href="https://mvp.online">MVP</a></li>
 					</ul>
 				</details>
 			</li>
