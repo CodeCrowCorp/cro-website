@@ -12,7 +12,7 @@
 			<IconSocialCodeCrow />
 		</div>
 		<div>
-			<p class="font-bold">Code Crow Corp © 2023</p>
+			<p class="font-bold">Code Crow © 2023</p>
 			<p>v{__VERSION__} [{env.PUBLIC_ENV}]</p>
 		</div>
 	</div>
