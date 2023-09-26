@@ -2,7 +2,7 @@
 	import { env } from '$env/dynamic/public'
 	import IconSocialGitHub from '$lib/assets/icons/social/IconSocialGitHub.svelte'
 	import IconSocialDiscord from '$lib/assets/icons/social/IconSocialDiscord.svg'
-	import IconSocialTwitter from '$lib/assets/icons/social/IconSocialTwitter.svelte'
+	import IconSocialTwitter2 from '$lib/assets/icons/social/IconSocialTwitter2.svelte'
 	import IconSocialCodeCrow from '$lib/assets/icons/social/IconSocialCodeCrow.svelte'
 </script>
 
@@ -24,7 +24,7 @@
 			<img src={IconSocialDiscord} alt="" />
 		</a>
 		<a href="https://twitter.com/CodeCrowCorp" target="_blank" rel="noreferrer">
-			<IconSocialTwitter />
+			<IconSocialTwitter2 />
 		</a>
 	</div>
 </footer>
