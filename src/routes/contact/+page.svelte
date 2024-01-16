@@ -24,7 +24,7 @@
 				<img class="w-7" src={IconSocialDiscordInverse} alt="" />
 			</div>
 			<p class="pl-4 text-white text-base">
-				<a class="link" href="https://discord.gg/CodeCrow" target="_blank" rel="noreferrer"
+				<a class="link" href="https://discord.gg/cFkWepZfwc" target="_blank" rel="noreferrer"
 					>Create a support ticket in our discord</a>
 			</p>
 		</div>
