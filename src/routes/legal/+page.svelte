@@ -17,6 +17,10 @@
 		{
 			name: 'Terms of Service',
 			url: 'https://legal.mage.stream/terms.pdf'
+		},
+		{
+			name: 'Google Limited Use Policy',
+			url: 'https://legal.mage.stream/google.pdf'
 		}
 	]
 </script>
