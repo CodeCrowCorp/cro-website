@@ -21,6 +21,10 @@
 		{
 			name: 'Google Limited Use Policy',
 			url: 'https://legal.mage.stream/google.pdf'
+		},
+		{
+			name: 'YouTube Terms of Service',
+			url: 'https://www.youtube.com/t/terms'
 		}
 	]
 </script>
