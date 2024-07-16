@@ -35,6 +35,7 @@
 					<summary class="focus:bg-pink-700"> Products </summary>
 					<ul class="p-2 z-10">
 						<li><a class="focus:bg-pink-700" href="https://mage.stream">Mage</a></li>
+						<li><a class="focus:bg-pink-700" href="https://oneweek.work">OneWeek</a></li>
 					</ul>
 				</details>
 			</li>
