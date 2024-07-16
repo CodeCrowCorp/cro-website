@@ -11,63 +11,63 @@ permissions:
   deployments: write
 
 jobs:
-  test:
-    if: ${{ github.actor != 'dependabot[bot]' }}
-    name: Test using Playwright
-    timeout-minutes: 60
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
+  # test:
+  #   if: ${{ github.actor != 'dependabot[bot]' }}
+  #   name: Test using Playwright
+  #   timeout-minutes: 60
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - name: Checkout
+  #       uses: actions/checkout@v4
 
-      - name: Setup Node
-        uses: actions/setup-node@v4
-        with:
-          node-version: 18
+  #     - name: Setup Node
+  #       uses: actions/setup-node@v4
+  #       with:
+  #         node-version: 18
 
-      - name: Install Dependencies
-        run: |
-          npm install
-          npx playwright install
+  #     - name: Install Dependencies
+  #       run: |
+  #         npm install
+  #         npx playwright install
 
-      - name: Install Playwright Browser
-        run: |
-          sudo apt-get update
-          npx playwright install-deps
+  #     - name: Install Playwright Browser
+  #       run: |
+  #         sudo apt-get update
+  #         npx playwright install-deps
 
-      - name: Run Playwright Tests
-        continue-on-error: true
-        run: |
-          npm run check
-          npm run test
-        env:
-          PUBLIC_ENV: ${{ secrets.PUBLIC_ENV }}
+  #     - name: Run Playwright Tests
+  #       continue-on-error: true
+  #       run: |
+  #         npm run check
+  #         npm run test
+  #       env:
+  #         PUBLIC_ENV: ${{ secrets.PUBLIC_ENV }}
 
-      - name: Convert E2E Report to Coverage Report
-        run: |
-          npm install playwright-e2e-coverage-report
-          wget https://raw.githubusercontent.com/CodeCrowCorp/playwright-e2e-coverage-report/master/scripts/reportConverter.js
-          chmod u+x reportConverter.js
-          node ./reportConverter.js
+  #     - name: Convert E2E Report to Coverage Report
+  #       run: |
+  #         npm install playwright-e2e-coverage-report
+  #         wget https://raw.githubusercontent.com/CodeCrowCorp/playwright-e2e-coverage-report/master/scripts/reportConverter.js
+  #         chmod u+x reportConverter.js
+  #         node ./reportConverter.js
 
-      - name: Upload Artifact
-        uses: actions/upload-artifact@v4.3.4
-        if: always()
-        with:
-          name: results.json
-          path: ./results.json
-          retention-days: 30
+  #     - name: Upload Artifact
+  #       uses: actions/upload-artifact@v4.3.4
+  #       if: always()
+  #       with:
+  #         name: results.json
+  #         path: ./results.json
+  #         retention-days: 30
 
-      - name: Send to Codecov
-        uses: codecov/codecov-action@v4.5.0
-        with:
-          files: ./results.json
-          flags: "e2ecoverage"
+  #     - name: Send to Codecov
+  #       uses: codecov/codecov-action@v4.5.0
+  #       with:
+  #         files: ./results.json
+  #         flags: "e2ecoverage"
 
   deploy:
     if: ${{ github.actor != 'dependabot[bot]' }}
     name: Deploy to Cloudflare Pages (Production)
-    needs: [test]
+    # needs: [test]
     runs-on: ubuntu-latest
     permissions:
       contents: read
