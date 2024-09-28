@@ -16,6 +16,7 @@
 					<a class="justify-between focus:bg-pink-700"> Products </a>
 					<ul class="p-2">
 						<li><a class="focus:bg-pink-700" href="https://mage.stream">Mage</a></li>
+						<li><a class="focus:bg-pink-700" href="https://oneweek.work">OneWeek</a></li>
 					</ul>
 				</li>
 				<li><a class="focus:bg-pink-700" href="/careers">Careers</a></li>
